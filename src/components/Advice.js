@@ -9,11 +9,10 @@ export class Advice extends Component {
         this.fetchAdvice();
     }
     fetchAdvice = () => {
-        axios.get('https://api.adviceslip.com/advice')
+        axios.get('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
             .then((response) => {
-                const { advice } = response.data.slip;
-                console.log(advice);
-                this.setState({ advice: advice });
+                console.log(response.data[0]);
+                this.setState({ advice: response.data[0] });
             })
             .catch((error) => {
                 console.log(error);
