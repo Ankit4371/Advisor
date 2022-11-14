@@ -21,7 +21,7 @@ export class App extends Component {
     }
     render() {
         return (
-            <div>
+            
                 <div className="app">
                     <div className="card">
                         <h1 className="heading">
@@ -32,7 +32,7 @@ export class App extends Component {
                         </button>
                     </div>
                 </div>
-            </div>
+            
         )
     }
 }
